@@ -99,6 +99,7 @@ if (isset($_SESSION['logged'])){
     <p><span id="Contacts-text-top-2">Friends websites</span></p>
         <a class="lemonshmoe" href="https://lemonsh.moe/" target="_blank">lemonsh.moe</a>
         <a class="adamszary" href="https://adamszary.xyz" target="_blank">adamszary.xyz</a>
+        <a class="adamszary" href="https://skwodo.com" target="_blank">skwodo.com</a>
     </div>
 </div>
 </section>
