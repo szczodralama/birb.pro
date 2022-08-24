@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: #11101D;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+}
+.sidebar.open{
+    width: 250px;
+}
+.sidebar .logo-details{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sidebar .logo-details .icon{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+    opacity: 1;
+}
+.sidebar .logo-details #btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+    text-align: right;
+}
+.sidebar i{
+    color: #fff;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+.sidebar .nav-list{
+    margin-top: 20px;
+    height: 100%;
+}
+.sidebar li{
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+.sidebar li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+    display: none;
+}
+.sidebar input{
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 400;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    background: #1d1b31;
+}
+.sidebar.open input{
+    padding: 0 20px 0 50px;
+    width: 100%;
+}
+.sidebar .bx-search{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: #1d1b31;
+    color: #FFF;
+}
+.sidebar.open .bx-search:hover{
+    background: #1d1b31;
+    color: #FFF;
+}
+.sidebar .bx-search:hover{
+    background: #FFF;
+    color: #11101d;
+}
+.sidebar li a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101D;
+}
+.sidebar li a:hover{
+    background: #FFF;
+}
+.sidebar li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+    transition: all 0.5s ease;
+    color: #11101D;
+}
+.sidebar li i{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+.sidebar li.profile{
+    position: fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.sidebar.open li.profile{
+    width: 250px;
+}
+.sidebar li .profile-details{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.sidebar li img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+}
+.sidebar li.profile .job{
+    font-size: 12px;
+}
+.sidebar .profile #log_out{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #1d1b31;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+.sidebar.open .profile #log_out{
+    width: 50px;
+    background: none;
+}
+.home-section{
+    position: relative;
+    background: #cadbe8;
+    min-height: 93vh;
+    top: 58px;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+}
+.sidebar.open ~ .home-section{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.home-section .text{
+    display: inline-block;
+    color: #2e2e44;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px
+}
+#Contacts{
+    width: 320px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 5px 7px 10px #5b5b65;
+    margin-right: 120px;
+    margin-left: 50px;
+    background-color: rgba(200, 121, 203, 0.55);
+    position: sticky;
+    left: 1300px;
+    top: 120px;
+}
+#Contacts-text{
+    position: relative;
+    top: 20px;
+    color: #cadbe8;
+    text-shadow: 2px 2px 5px #5b5b65;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px
+
+}
+#Contacts-text-top{
+    margin-left: 85px;
+    color: #e3e17a;
+}
+#Contacts-text-top-2{
+    margin-left: 60px;
+    color: #e3e17a;
+}
+#C\+\+{
+    color: #a6a417;
+}
+.cpp{
+    color: #a6a417;
+    text-decoration-line:none
+}
+.Kotlin {
+    color: #1653b6;
+    text-decoration-line:none ;
+}
+.lemonshmoe{
+    color:#cadbe8;
+    text-decoration: none;
+}
+.adamszary{
+    color:#cadbe8;
+    text-decoration: none;
+}
+.github{
+    color:#cadbe8;
+    text-decoration: none;
+}
+
+@media (max-width: 420px) {
+    .sidebar li .tooltip{
+        display: none;
+    }
+
+}
+
+
+/*===================== loging bar =======================*/
+
+
+
+/*body {font-family: "JetBrains Mono", Helvetica, sans-serif;}*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 18px 24px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #1653b6;
+    box-sizing: border-box;
+    background-color: #f5f2db;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+#sticky_top_container{
+    height: 65px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #6d44b8;
+    position: sticky;
+    bottom: 900px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+#sign_in{
+    position: sticky;
+    left: 1660px;
+}
+#sign_up{
+    position: sticky;
+    left: 1750px;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    border-radius: 30px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #7abdf8;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+#src{
+    color: #888888;
+    text-decoration-line:none;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
