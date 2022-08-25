@@ -88,11 +88,24 @@ if (isset($_SESSION['logged'])){
 </div>
 <section class="home-section">
     <div id="blog_container">
-        <div id="article">
-            <img id="img_article" width="300px" src="https://pbs.twimg.com/media/FZ5KnsDVQAEQiNB?format=jpg&name=900x900" alt="B7">
+        <div id="article" onclick="document.getElementById('id03').style.display='block'">
+            <img id="img_article" width="300px" style="border-radius: 12px;" src="https://pbs.twimg.com/media/FZ5KnsDVQAEQiNB?format=jpg&name=900x900" alt="B7">
             <p id="article_text">Full duration static fire</p>
 <!--            <p id="article_date">25/08/2022</p>-->
         </div> <!--///======///-->
+    </div>
+    <div id="id03" class="modal">
+<!--            <div class="imgcontainer">-->
+<!--                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+<!--                <img src="Secure%20login-rafiki.svg" alt="Avatar" class="avatar">-->
+<!--            </div>-->
+
+            <div id="in_modal_content">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img id="img_article" width="1100px" style="border-radius: 10px;" src="https://pbs.twimg.com/media/FZwZBv7VEAAL_Kc.jpg" alt="B7">
+                <span id="in_modal_text">fsdgfvrfvgebertbgv</span>
+            </div>
+
     </div>
 
 </section>
@@ -201,12 +214,12 @@ if (isset($_SESSION['logged'])){
 
 <script>
     // modal
-    var modal = document.getElementById('id01');
+    var modal1 = document.getElementById('id01');
 
     // when the user clicks anywhere outside the modal, close it
     window.onclick = function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
+        if (event.target === modal1) {
+            modal1.style.display = "none";
         }
     }
 </script>
