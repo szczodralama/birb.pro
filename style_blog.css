@@ -224,7 +224,7 @@
 }
 .home-section{
     position: relative;
-    background: #28283b;
+    background-image: url("starship.jpg");
     min-height: 93vh;
     top: 66px;
     left: 78px;
@@ -246,13 +246,55 @@
     margin: 20px
 }
 #blog_container{
-    background-color: #5b5b65;
+    /*background-color: #5b5b65;*/
     width: 1400px;
     height: 800px;
     position: fixed;
     left: 300px;
     top: 100px;
     bottom: 100px;
+}
+#article{
+    width: 400px;
+    height: 620px;
+    background-color: #404040;
+    position: sticky;
+    left: 800px;
+    top: 180px;
+    opacity: 0.7;
+    border-radius: 9px;
+    box-shadow: black 4px 4px 6px;
+}
+#article:hover{
+    opacity: 1.0;
+}
+#img_article{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    box-shadow: #1d1b31 3px 3px 3px;
+}
+#article_text{
+    text-align: center;
+    position: relative;
+    top: 75px;
+    color: #7abdf8;
+    font-size: 18px;
+}
+#article_date{
+    position: relative;
+    top: 90px;
+    left: 290px;
+}
+body{
+    background-image: url("starship2.jpg");
+    background-size: 1600px;
+}
+hr{
+    background-color: #516a93;
+    height: 2px;
+    border: 0;
+    padding: 0 5vw;
 }
 
 @media (max-width: 420px) {
@@ -313,6 +355,7 @@ button:hover {
     position: sticky;
     left: 1750px;
 }
+
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;

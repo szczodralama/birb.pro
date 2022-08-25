@@ -12,6 +12,7 @@ if (isset($_SESSION['logged'])){
     <meta charset="UTF-8">
     <meta name="google" content="notranslate">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css<?=time()?>" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,21 +31,21 @@ if (isset($_SESSION['logged'])){
             <span class="tooltip">Search</span>
         </li>
         <li>
-            <a href="https://birb.pro/home.html">
+            <a href="https://birb.pro/home.php">
                 <i class='bx bx-home'></i>
                 <span class="links_name">Home</span>
             </a>
             <span class="tooltip">Home</span>
         </li>
         <li>
-            <a href="https://birb.pro/aboutme.html">
+            <a href="https://birb.pro/aboutme.php">
                 <i class='bx bxs-user-account' ></i>
                 <span class="links_name">About me</span>
             </a>
             <span class="tooltip">About me</span>
         </li>
         <li>
-            <a href="https://birb.pro/blog.html">
+            <a href="https://birb.pro/blog.php">
                 <i class='bx bx-rocket' ></i>
                 <span class="links_name">Blog</span>
             </a>
@@ -53,7 +54,7 @@ if (isset($_SESSION['logged'])){
         <li>
 
         <li>
-            <a href="https://birb.pro/datastorage.html">
+            <a href="https://birb.pro/datastorage.php">
                 <i class='bx bx-hdd' ></i>
                 <span class="links_name">Data storage</span>
             </a>
@@ -61,14 +62,14 @@ if (isset($_SESSION['logged'])){
         </li>
 
         <li>
-            <a href="https://birb.pro/account.html">
+            <a href="https://birb.pro/account.php">
                 <i class='bx bx-user' ></i>
                 <span class="links_name">My account</span>
             </a>
             <span class="tooltip">My account</span>
         </li>
         <li>
-            <a href="https://birb.pro/settings.html">
+            <a href="https://birb.pro/settings.php">
                 <i class='bx bx-cog' ></i>
                 <span class="links_name">Settings</span>
             </a>

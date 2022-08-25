@@ -340,9 +340,10 @@ button {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #6d44b8;
+    background-color: #7abdf8;
     position: sticky;
     bottom: 900px;
+    box-shadow: #3e80b0 1px 1px 10px;
 }
 
 button:hover {

@@ -11,7 +11,7 @@ if (!isset($_SESSION['logged'])){
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logged.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,6 +97,7 @@ if (!isset($_SESSION['logged'])){
             <a class="github" href="https://github.com/szczodralama" target="_blank">GitHub</a>
             <p><span id="Contacts-text-top-2">Friends websites</span></p>
             <a class="lemonshmoe" href="https://lemonsh.moe/" target="_blank">lemonsh.moe</a>
+            <a class="adamszary" href="https://adamszary.xyz" target="_blank">adamszary.xyz</a>
             <a class="adamszary" href="https://adamszary.xyz" target="_blank">adamszary.xyz</a>
         </div>
     </div>

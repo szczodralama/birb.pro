@@ -88,7 +88,11 @@ if (isset($_SESSION['logged'])){
 </div>
 <section class="home-section">
     <div id="blog_container">
-
+        <div id="article">
+            <img id="img_article" width="300px" src="https://pbs.twimg.com/media/FZ5KnsDVQAEQiNB?format=jpg&name=900x900" alt="B7">
+            <p id="article_text">Full duration static fire</p>
+<!--            <p id="article_date">25/08/2022</p>-->
+        </div> <!--///======///-->
     </div>
 
 </section>
