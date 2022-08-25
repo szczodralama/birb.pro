@@ -94,7 +94,7 @@ if (isset($_SESSION['logged'])){
 <!--            <p id="article_date">25/08/2022</p>-->
         </div> <!--///======///-->
     </div>
-    <div id="id03" class="modal">
+    <div id="id03" class="modal animate">
 <!--            <div class="imgcontainer">-->
 <!--                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>-->
 <!--                <img src="Secure%20login-rafiki.svg" alt="Avatar" class="avatar">-->
@@ -103,7 +103,15 @@ if (isset($_SESSION['logged'])){
             <div id="in_modal_content">
                 <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <img id="img_article" width="1100px" style="border-radius: 10px;" src="https://pbs.twimg.com/media/FZwZBv7VEAAL_Kc.jpg" alt="B7">
-                <span id="in_modal_text">fsdgfvrfvgebertbgv</span>
+                <span id="in_modal_text">
+                    <br>11 sierpnia o godzinie 19:48 UTC (21:48 czasu polskiego) miał miejsce pierwszy w historii tkzw.
+                    "Full duration static fire". Podczas testów <br>Raptor RB 39 został uruchomiony na 20 sekund,
+                    co pozwoliło na przetestowanie systemu autogenicznego podtrzymywania ciśnienia<br> w zbiornikach
+                    (gazy wylotowe trafiają do wnętrza zbiorników powodując wzrost ciśnienia utraconego na skutek
+                    zmniejszania objętości<br> paliwa podczas lotu). Jest ono niezbędne ponieważ Starship jest wykonany
+                    ze stali nierdzewnej o grubości 3.6mm. Gdyby nie było<br> ciśnienia w zbiornikach, rozpadłby się w pizdu jak
+                    Atlas Agena.<br>
+                </span>
             </div>
 
     </div>
